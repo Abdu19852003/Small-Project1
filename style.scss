@@ -1,0 +1,72 @@
+@import "./node_modules/bootstrap/scss/bootstrap.scss";
+//     --orange:orange;
+//     --blue:blue;
+// }
+// h1{
+//     color: var(--blue);
+// }
+// button{
+//     --button-color:rgb(61, 156, 86);
+//     background-color: var(--button-color);
+// }
+// .box{
+//     background-color: var(--a,green);
+//     padding: 10px;
+//     margin: 10px;
+// }
+// .special{
+//     --a:rgb(112, 80, 20);
+// }
+$bg-color:red;
+$myFontSize:24px;
+$myWidth:300px;
+$size:1em;
+$color:blue;
+$colors:(
+    main: #0FFF95,
+    second:#FCBA04,
+);
+
+body{
+    background-color: $bg-color;
+    font-size: $myFontSize;
+    color:$color;
+}
+#container{
+    margin: $size*4;
+    width: $myWidth / 3;
+}
+p{
+    $color:black !global;
+    color: $color;
+}
+span{
+    color: $color;
+
+}
+nav {
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+    li {
+      display: inline-block;
+    }
+    a {
+      display: block;
+      padding: 6px 12px;
+      text-decoration: none;
+    }
+    &:hover li {
+        background-color: black;
+        
+    }
+  }
+  .nested{
+    background-color: aqua;
+    p{
+        color: brown;
+    }
+  }
+  
